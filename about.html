@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<style>
+		header {
+  			background-color: #ffffff;
+  			background-image: url('C:\\Users\\shrey\\Downloads\\HeaderBck.png');
+  			background-size: contain;
+ 			 color: #2c2b3d;
+ 			 text-align: center;
+ 			 padding: 30px;
+ 			 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #f1f1f1;
+		}
+		nav li {
+			float: left;
+		}
+		nav li a {
+			display: block;
+			color: #333;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-family: Arial, sans-serif;
+		}
+		nav li a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		main {
+			padding: 20px;
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: top;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			padding: 20px 0;
+		}
+		.image-section {
+			flex: 0 0 250px;
+			padding-right: 20px;
+			box-sizing: border-box;
+		}
+		.slideshow-section {
+			flex: 0 0 250px;
+			padding-right: 20px;
+			box-sizing: border-box;
+		}
+		.text-section {
+			flex: 1;
+			box-sizing: border-box;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 style="font-size: 48px;">About Me</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="landingpage.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div class="image-section">
+			<img src="file:///C:/Users/shrey/Downloads/WhoAmI.png" alt="Personal Photo">
+		</div>
+		<div class="text-section">
+			<h2>Who Am I?</h2>
+			<p>Hi I'm Shreya Mailvaganam a 17 year old digital artist, photographer and graphic designer.  </p>
+		</div>
+
+		<div class="slideshow-section">
+            <div class="slideshow-container">
+              <img class="mySlides" src="C:\Users\shrey\Downloads\RealismEx.png">
+              <img class="mySlides" src="C:\Users\shrey\Downloads\PhotoEx.png">
+              <img class="mySlides" src="C:\Users\shrey\Downloads\GatoEx.png">
+            </div>
+          </div>
+          
+          <script>
+            var slideIndex = 0;
+            showSlides();
+          
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              slides[slideIndex - 1].style.display = "block";
+              setTimeout(showSlides, 2000);
+            }
+          </script>
+
+		<div class="text-section">
+			<h2>My Experience</h2>
+			<p> I have experience working with many different mediums of visual art including; digital painting, photography, charcoal and watercolour. </p>
+		</div>
+	</main>
+
+	
+</body>
+</html>
